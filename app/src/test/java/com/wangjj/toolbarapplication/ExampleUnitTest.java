@@ -1,4 +1,4 @@
-package com.wangjj.toolbarapplication;
+package com.wangjj.template;
 
 import org.junit.Test;
 

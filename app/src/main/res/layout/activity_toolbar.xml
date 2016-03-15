@@ -28,6 +28,9 @@
                 android:id="@+id/tab_layout"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
+                app:tabIndicatorColor="@color/color_31c27c"
+                app:tabSelectedTextColor="@color/color_0176da"
+                app:tabTextColor="#ffffff"
                 android:background="#03BCD4">
             </android.support.design.widget.TabLayout>
         </android.support.design.widget.AppBarLayout>
@@ -55,5 +58,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/drawer_header"
-        app:menu="@menu/menu_drawer"></android.support.design.widget.NavigationView>
+        app:menu="@menu/menu_drawer">
+
+    </android.support.design.widget.NavigationView>
 </android.support.v4.widget.DrawerLayout>

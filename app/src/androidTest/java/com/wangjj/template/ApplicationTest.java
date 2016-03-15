@@ -1,4 +1,4 @@
-package com.wangjj.toolbarapplication;
+package com.wangjj.template;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

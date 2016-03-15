@@ -1,4 +1,4 @@
-package com.wangjj.toolbarapplication;
+package com.wangjj.template;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
