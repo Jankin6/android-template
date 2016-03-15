@@ -9,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -51,10 +52,10 @@ public class ToolBarActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
 
         //初始化ToolBar
-//        setSupportActionBar(mToolbar);
-//        ActionBar actionBar = getSupportActionBar();
-//        actionBar.setHomeAsUpIndicator(android.R.drawable.ic_dialog_alert);
-//        actionBar.setDisplayHomeAsUpEnabled(true);
+        setSupportActionBar(mToolbar);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setHomeAsUpIndicator(android.R.drawable.ic_dialog_alert);
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         mToolbar.inflateMenu(R.menu.zhihu_toolbar_menu);
         mToolbar.setNavigationIcon(R.mipmap.ic_drawer_home);
