@@ -1,4 +1,4 @@
-package com.wangjj.template.activity.md_support_library;
+package com.wangjj.template.activity.supportlibrary;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

@@ -1,4 +1,4 @@
-package com.wangjj.template.activity.md_support_library;
+package com.wangjj.template.activity.supportlibrary;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -57,7 +57,6 @@ public class ToolBarActivity extends AppCompatActivity {
         actionBar.setHomeAsUpIndicator(android.R.drawable.ic_dialog_alert);
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        mToolbar.inflateMenu(R.menu.zhihu_toolbar_menu);
         mToolbar.setNavigationIcon(R.mipmap.ic_drawer_home);
         mToolbar.setTitle(R.string.home_page);
         mToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
@@ -127,7 +126,7 @@ public class ToolBarActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //主界面右上角的menu菜单
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.zhihu_toolbar_menu, menu);
         return true;
     }
 

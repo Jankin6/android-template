@@ -1,4 +1,4 @@
-package com.wangjj.template.activity.md_support_library;
+package com.wangjj.template.activity.supportlibrary;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -17,26 +17,21 @@ import com.wangjj.template.R;
  * Time         : 15:09
  * Description  :
  */
-public class ShareFragment extends Fragment {
-    private View mParentView;
+public class InfoDetailsFragment extends Fragment {
     private RecyclerView mRecyclerView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        mParentView = inflater.inflate(R.layout.share_fragment, container, false);
-        return mParentView;
+        mRecyclerView = (RecyclerView) inflater.inflate(R.layout.info_details_fragment, container, false);
+        return mRecyclerView;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mRecyclerView = (RecyclerView) mParentView.findViewById(R.id.recycler_view);
-
-        LinearLayoutManager manager = new LinearLayoutManager(mRecyclerView.getContext());
-        manager.setOrientation(LinearLayoutManager.HORIZONTAL);
-        mRecyclerView.setLayoutManager(manager);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(mRecyclerView.getContext()));
         mRecyclerView.setAdapter(new RecyclerViewAdapter(getActivity()));
     }
 }

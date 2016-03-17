@@ -1,4 +1,4 @@
-package com.wangjj.template.activity.md_support_library;
+package com.wangjj.template.activity.supportlibrary;
 
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
